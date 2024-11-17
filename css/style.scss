@@ -1,0 +1,138 @@
+@import url(../fonts/Gilroy/style.css);
+@import url(../fonts/Chronicle/style.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+
+    background-image: #000;
+    background-image: url(../images/HG.png), url(../images/MG.png), url(../images/MG.png);
+    background-position: 0 50% ,0 500px, 0 6000px;/* Позиция каждого изображения */
+    background-size: 100% auto ,100% auto, 100% auto; /* Размер каждого изображения */
+    background-repeat: no-repeat ,no-repeat, no-repeat;/* Без повторений */
+    background-blend-mode: overlay, overlay, overlay;/* Накладывание изображений */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+header 
+    .logo{
+        font: {
+            family: 'CHrONicLe Regular';
+            style: normal;
+            weight: normal;
+            size: 32px;
+        }
+    }
+header
+    .links,
+header
+    .account{
+        font: {
+            family: 'Gilroy-Bold ☞';
+            style: normal;
+            weight: normal;
+            size: 18px
+        }
+    }
+
+header
+    .links{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        a{
+            margin: 0 5%;
+        }
+    }
+
+header{
+    a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    margin-bottom: 100px;
+    }
+
+
+
+
+.middle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+
+}
+.middle
+    .social{
+        display: flex;
+        flex-direction: row;
+        font: {
+            family: 'Gilroy-Bold';
+            style: normal;
+            weight: normal;
+            size: 18px
+        }
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        p, a{
+            margin: 5px 0;
+        }
+    }
+.middle
+    .content{
+        .yellow-h{
+            width: 100%;
+            font: {
+                family:  sans-serif;
+                style: normal;
+                weight: 500;
+                size: 1em;
+            };
+            color: #FBD784;
+            letter-spacing: 10px;
+        }
+        .yellow-h::before{
+            content: '';
+            display: inline-block;
+            width: 3vw;
+            height: 0.25vh;
+            background-color: #FBD784;
+            margin-right: 2.5%;
+            vertical-align: middle;
+        }
+        h1{
+            font: {
+                family: serif;
+                style: normal;
+                weight: normal;
+                size: 5.5em;
+            }
+            margin: 2.5% 0;
+        }
+    }
+.middle
+    .slider{
+        background-color: white;
+        height: 10vh;
+        width: 5vw;
+    }
+    
+
+
